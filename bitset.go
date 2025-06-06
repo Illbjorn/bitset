@@ -16,7 +16,7 @@ func New[T unsigned](value T) Bitset[T] {
 
 type (
 	unsigned interface {
-		uint8 | uint16 | uint32 | uint64
+		~uint8 | ~uint16 | ~uint32 | ~uint64
 	}
 
 	Bitset[T unsigned] struct {
